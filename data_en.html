@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sources - Cyberfair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+/* --- 頁面元件樣式 --- */
+.motivation-box {
+    background-color: #fff;
+    border: 2px double var(--v-brown);
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.motivation-box::before {
+    content: "Research Motivation";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 10px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: var(--v-brown);
+}
+
+.process-step {
+    border-left: 2px solid var(--v-gold);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* --- Footer 基礎佈局 --- */
+.site-footer {
+    background-color: #2b1d14; /* 深咖啡色背景 */
+    color: #ccac82;
+    padding: 60px 0;
+    border-top: 2px solid #ccac82;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 標題行與對齊 --- */
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+
+.footer-title-row h3 {
+    margin-bottom: 0;
+    white-space: nowrap; 
+}
+
+/* --- 文字內容 --- */
+.footer-text p, .intro-content p {
+    text-align: justify; 
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* --- Logo 容器設定 --- */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 若標題旁不需要置底，此處由 footer-title-row 統一管理 */
+}
+
+.footer-logo-img {
+    height: 30px; /* 標題旁精緻尺寸 */
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* --- 右側 Cyberfair Logo --- */
+.cyberfair-container {
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cyber-logo {
+    height: 60px;
+}
+
+/* --- 響應式排版 --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .cyberfair-container {
+        justify-content: center;
+    }
+    .footer-title-row {
+        flex-wrap: wrap; /* 手機版避免擠壓 */
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <a href="index_en.html">Home</a>
+        <a href="life_en.html">Life</a>
+        
+        <div class="dropdown">
+            <a href="career_en.html" class="dropbtn">Career</a>
+            <div class="dropdown-content">
+                <a href="adversity_en.html">Overcoming Adversity</a>
+                <a href="low_points_en.html">Overcoming the Low Points</a>
+                <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+                <a href="scaling_en.html">Internationalization and Scaling</a>
+            </div>
+        </div>
+
+        <a href="family_en.html">Family</a>
+        <a href="values_en.html">Values</a>
+        <a href="future_en.html">Future</a>
+
+        <div class="dropdown">
+            <a href="about_en.html" class="dropbtn">About Us</a>
+            <div class="dropdown-content">
+                <a href="notes_en.html">Group Notes</a>
+                <a href="team_en.html">Our Team</a>
+            </div>
+        </div>
+        <a href="data_en.html">Data Source</a>
+
+        <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+    </nav>
+
+    <main class="content-container" style="text-align: center;">
+    <h1 style="color: #ccac82; margin-bottom: 30px;">Data Source</h1>
+
+    <section class="data-group" style="margin-bottom: 40px;">
+    <h2><i class="fas fa-globe"></i>Online Resources</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li>
+            <a href="https://www.ctee.com.tw/news/20210306700448-439901" target="_blank" style="color: inherit; text-decoration: underline;">
+                Chairman of Wei Hao, Wen-Hao Chi: Entrepreneurship with Five Hearts and Four Abilities - <cite>Commercial Times</cite>
+            </a>
+        </li>
+        <li>
+            <a href="https://tw.news.yahoo.com/%E5%8F%B0%E7%81%A3%E7%B4%80%E6%B0%8F%E5%AE%97%E8%A6%AA%E7%B8%BD%E6%9C%83%E9%A6%96%E5%B1%86%E6%9C%83%E5%93%A1%E5%A4%A7%E6%9C%83-%E7%B4%80%E6%96%87%E8%B1%AA%E7%B8%BD%E8%A3%8140%E5%B9%B4%E5%A4%A2%E6%83%B3%E6%88%90%E7%9C%9F-180008871.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAES17al80A1kMXUPzmwCDIj-53Ywi0OgUMyzoZahAUyrhvA0vh4jxoZcqlcW4OjWkZgntjXj6cHcQkagy_JDf-aKZUto96VWyNIGcoXETgaqCv4N62sJLacfxfRbXIkFb0GzTUJsiJhF-LOc-D29rX5YggDpZMqRK3BL-osPntX-" target="_blank" style="color: inherit; text-decoration: underline;">
+                Inaugural General Meeting of Taiwan Chi Clan Association: President Wen-Hao Chi's 40-Year Dream Comes True
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <section class="data-group" style="margin-bottom: 40px;">
+        <h2><i class="fas fa-microphone"></i>Interview Records</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>Interviewee: President Wen-Hao Chi</li>
+            <li>Audio Recording: <a href="https://drive.google.com/file/d/1JxzW9HytOaChM4TGtXyuw0VQBmWK9Zmq/view?usp=sharing" target="_blank">Click here for audio link</a></li>
+        </ul>
+    </section>
+
+    <section class="data-group">
+        <h2><i class="fas fa-book"></i>Image Credits</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li>Chi, W. H. (2025). <i>Barrenness and Sowing: Memoirs of Wen-Hao Chi</i> (1st ed.). Self-published.</li>
+            <li>Image Credits: Provided and authorized by President Wen-Hao Chi.</li>
+        </ul>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

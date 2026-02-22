@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Life | Chi Wen-Hao</title>
+    <style>
+        /* 針對資料表格的特別樣式 */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            font-size: 0.95rem;
+        }
+        .info-table td {
+            border: 1px solid #d3c4b1;
+            padding: 12px 15px;
+        }
+        .info-table td:first-child {
+            background-color: var(--v-brown);
+            color: var(--paper);
+            font-weight: bold;
+            width: 25%;
+        }
+        
+/* --- 頁面元件樣式 --- */
+.motivation-box {
+    background-color: #fff;
+    border: 2px double var(--v-brown);
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.motivation-box::before {
+    content: "Research Motivation";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 10px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: var(--v-brown);
+}
+
+.process-step {
+    border-left: 2px solid var(--v-gold);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* --- Footer 基礎佈局 --- */
+.site-footer {
+    background-color: #2b1d14; /* 深咖啡色背景 */
+    color: #ccac82;
+    padding: 60px 0;
+    border-top: 2px solid #ccac82;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 標題行與對齊 --- */
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+
+.footer-title-row h3 {
+    margin-bottom: 0;
+    white-space: nowrap; 
+}
+
+/* --- 文字內容 --- */
+.footer-text p, .intro-content p {
+    text-align: justify; 
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* --- Logo 容器設定 --- */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 若標題旁不需要置底，此處由 footer-title-row 統一管理 */
+}
+
+.footer-logo-img {
+    height: 30px; /* 標題旁精緻尺寸 */
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* --- 右側 Cyberfair Logo --- */
+.cyberfair-container {
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cyber-logo {
+    height: 60px;
+}
+
+/* --- 響應式排版 --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .cyberfair-container {
+        justify-content: center;
+    }
+    .footer-title-row {
+        flex-wrap: wrap; /* 手機版避免擠壓 */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index_en.html">Home</a>
+    <a href="life_en.html">Life</a>
+    
+    <div class="dropdown">
+        <a href="career_en.html" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+            <a href="adversity_en.html">Overcoming Adversity</a>
+            <a href="low_points_en.html">Overcoming the Low Points</a>
+            <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+            <a href="scaling_en.html">Internationalization and Scaling</a>
+        </div>
+    </div>
+
+    <a href="family_en.html">Family</a>
+    <a href="values_en.html">Values</a>
+    <a href="future_en.html">Future</a>
+
+    <div class="dropdown">
+        <a href="about_en.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="notes_en.html">Group Notes</a>
+            <a href="team_en.html">Our Team</a>
+        </div>
+    </div>
+    <a href="data_en.html">Data Source</a>
+
+    <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+</nav>
+
+    <div class="container">
+        <h1>Personal Life</h1>
+
+        <table class="info-table">
+            <tr><td>Birth</td><td>1949, Dihua Street, Taipei City, Taiwan</td></tr>
+            <tr><td>Education</td><td>Graduated from Tamkang High School. Later, he received an honorary degree in business administration from Cal Grad College in California, USA.</td></tr>
+            <tr><td>Known identity</td><td>Founder of WEVER Group, global marketing executive, reformer of the Old Tamsui Golf Course, and promoter of golf.</td></tr>
+            <tr><td>Profession</td><td>Entrepreneur, Chairman of WEVER Group, President of the Taiwan Golf Club, and social enterprise leader.</td></tr>
+            <tr><td>Parents</td><td>Father: 紀順吉 Chi Shun-Ji, Adoptive mother: 邱金圓 Qiu Jin-yuan</td></tr>
+            <tr><td>Spouse</td><td>劉柑柑 Candy</td></tr>
+            <tr><td>Children</td><td>Eldest son: 紀承緯 Chi Cheng-wei, Second son: 紀柏緯 Chi Bai-wei</td></tr>
+        </table>
+
+        <div class="image-frame">
+            <img src="images/life_01.jpg" alt="Father">
+            <p class="caption">1950s, photo of Father before he went to Japan to promote Taiwanese fruit</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_02.jpg" alt="Portrait">
+            <p class="caption">Personal portrait of Mr. Chi Wen-Hao</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_03.jpg" alt="China Trip">
+            <p class="caption">After the lifting of martial law, Chi Wen-Hao made his first trip to mainland China in 1988, landing at Rongqi Port in Guangdong Province</p>
+        </div>
+
+        <h2>Early Life</h2>
+        <p>Chi Wen-Hao was born in Dihua Street, Taipei City in a commercial family. His family was initially wealthy, but later declined after his father suffered a severe stroke. During his youth, he studied and worked part-time at Tamkang High School, and worked as a caddie at the Old Tamsui Golf Course during holidays, cultivating a deep affection for golf and a basic understanding of service and communication.</p>
+
+        <div class="image-frame">
+            <img src="images/life_04.jpg" alt="School Trip">
+            <p class="caption">Group photo during a school trip to Zhinan Temple when studying at Yongle Elementary School</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_05.jpg" alt="Childhood">
+            <p class="caption">Childhood group photo</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_06.jpg" alt="Ancestral Photo">
+            <p class="caption">1900s, the Chi family took a photo at Muzha Xianggong Temple. At this time, Chi Wen-Hao was not yet born</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_07.jpg" alt="Family Photo">
+            <p class="caption">Photo with family</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_08.jpg" alt="Dihua Street">
+            <p class="caption">Dihua Street</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_09.jpg" alt="Twin Brother">
+            <p class="caption">Photo with twin brother</p>
+        </div>
+
+        <h2>Career</h2>
+        <p>In 1974, Chi Wen-Hao started his own business, establishing WEVER Enterprise. Initially focused on OEM for export, emphasizing the production and export of outdoor sports goods (such as wakeboards, ropes and related equipment), with products marketed to many countries around the world and establishing long-term customer relationships. The company later expanded into diverse fields such as trade, culture and investment.</p>
+        <p>Advocates that business operations should have the concepts of "kindness, care, humility, self-reflection in adversity, and perseverance", and promotes management and quality responsibility with practical experience.</p>
+
+        <div class="image-frame">
+            <img src="images/life_10.jpg" alt="Golf Tournament">
+            <p class="caption">Business Cup Golf Invitational Tournament</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_11.jpg" alt="Golf Tournament 2">
+            <p class="caption">Business Cup Golf Invitational Tournament</p>
+        </div>
+
+        <p>Chi Wen-Hao has been involved in the affairs of Taiwan Golf Club (Old Tamsui Golf Course) for many years, and led the reform during his term as the 37th President (2019–2021) of the Taiwan Golf & Country Club (Old Tamsui Golf Course). During his tenure, he strengthened the quality of the venue, actively coordinated leases and plans with local governments, and during the pandemic, he assisted grassroots staff in seeking relief and support measures.</p>
+        <p>He advocated combining educational institutions and training resources to promote the development of golf, and led the golf course to promote various cultural and promotional activities at the centennial historical node.</p>
+
+        <h2>Public Office and Social Participation</h2>
+        <p>Chi Wen-Hao has long been involved in social welfare and local exchanges, and has served as the Chief Representative of San Bernardino County, California in Taiwan (facilitating various local exchanges and cooperation), and has actively participated in organizations such as Rotary International and the Tamkang High School Alumni Association.</p>
+        <p>He also pays attention to youth education, sharing business philosophy, and promoting golf, and has a certain influence in local communities and industry circles.</p>
+
+        <div class="image-frame">
+            <img src="images/life_12.jpg" alt="Chi Wen-Hao 1">
+            <p class="caption">Chi Wen-Hao (left 1)</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_13.jpg" alt="WEVER Group">
+            <p class="caption">WEVER Group Company</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_14.jpg" alt="Lions Club Speech">
+            <p class="caption">Chi Wen-Hao speaking at the Lions Clubs International celebration</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_15.jpg" alt="Inauguration">
+            <p class="caption">Lions Clubs International Inauguration Ceremony</p>
+        </div>
+
+        <h2>Business Philosophy</h2>
+        <p>Chi Wen-Hao emphasizes that enterprises and individuals should have perseverance and professionalism, and advocates that daily life and business opportunities should be closely linked, with "professionalism, experience, and long-term customer trust" as the foundation for corporate success. He also believes that supporting society and grassroots workers is part of corporate responsibility.</p>
+
+        <div class="image-frame">
+            <img src="images/life_16.jpg" alt="Skates">
+            <p class="caption">Roller skates and skateboards</p>
+        </div>
+
+        <h2>Personal Life (Family)</h2>
+        <p>Chi Wen-Hao's family life is centered on Tamsui. His wife, 劉柑柑 (Candy) and two sons have accompanied him through different stages of business operation and social participation for many years. He chose to take long-term root in Tamsui, not only running his business, but also managing the golf community and local connections.</p>
+        <p class="quote">"For him, life is not about constantly expanding outwards, but about doing things deeply and for a long time in a familiar place. This rhythm has also become the best annotation of his life's actions."</p>
+
+        <div class="image-frame">
+            <img src="images/life_17.jpg" alt="Family">
+            <p class="caption">Photo with family</p>
+        </div>
+
+        <div class="image-frame">
+            <img src="images/life_18.jpg" alt="Wife">
+            <p class="caption">Photo with his wife</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team</p>
+    </footer>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

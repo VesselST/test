@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Internationalization and Scaling | Career</title>
+    <style>
+        /* 基礎排版樣式 */
+        .story-section {
+            margin-bottom: 50px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .content-block p {
+            margin-bottom: 20px;
+        }
+
+        /* 時間軸表格樣式 */
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background-color: #fff;
+            box-shadow: 4px 4px 0px #4e342e;
+        }
+        .timeline-table th, .timeline-table td {
+            border: 1px solid #d3c4b1;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .timeline-table th {
+            background-color: #4e342e;
+            color: #f5f5dc;
+            font-family: 'Playfair Display', serif;
+        }
+        .timeline-table tr:nth-child(even) {
+            background-color: #fcf9f5;
+        }
+        
+        /* 下拉選單樣式 */
+        .dropdown { position: relative; display: inline-block; }
+        .dropbtn::after { content: " ▾"; font-size: 0.8rem; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4e342e;
+            min-width: 240px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            z-index: 1001;
+            top: 100%;
+            left: 0;
+        }
+        .dropdown-content a {
+            color: #f5f5dc !important;
+            padding: 12px 20px;
+            display: block;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index.html">首頁</a>
+    <a href="life.html">個人生平</a>
+    
+    <div class="dropdown">
+        <a href="career.html" class="dropbtn">事業</a>
+        <div class="dropdown-content">
+            <a href="adversity.html">走出變故</a>
+            <a href="low-points.html">攀越低谷</a>
+            <a href="shoes-trend.html">溜冰鞋潮流</a>
+            <a href="scaling.html">國際化與規模化</a>
+        </div>
+    </div>
+
+    <a href="family.html">家庭</a>
+    <a href="values.html">思想品質</a>
+    <a href="future.html">未來展望</a>
+
+    <div class="dropdown">
+        <a href="about.html" class="dropbtn">關於我們</a>
+        <div class="dropdown-content">
+            <a href="notes.html">小組記事</a>
+            <a href="team.html">團隊</a>
+        </div>
+    </div>
+    <a href="data.html">資料來源</a>
+
+    <a href="index_en.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">English</a>
+</nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 40px;">國際化與規模化</h1>
+
+        <section class="story-section">
+            <div class="image-frame">
+                <img src="images/career_15.jpg" alt="Shenzhen Factory Opening">
+                <p class="caption">緯豪深圳工廠開業時，台北市西南國際獅子會組團來拜訪紀文豪，以表慶賀</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_16.jpg" alt="Exhibition in USA">
+                <p class="caption">紀文豪與Keith Parten合影於美國展場的攤位，圖中兩人一同手持自家滑溜版的展品。</p>
+            </div>
+
+            <div class="content-block">
+                <p>1982年，緯豪實業股份有限公司成立，象徵事業體系開始朝向組織化與制度化發展。1987 年起， 隨著全球產業分工與製造外移趨勢，事業正式西進中國，並於深圳設立生產基地，逐步建立跨區 製造網絡。此一布局不僅提升產能彈性，也使企業在成本競爭與供應鏈整合方面取得關鍵優勢， 成為日後國際化的重要基礎。</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_17.jpg" alt="Shenzhen Workers">
+                <p class="caption">緯豪深圳工廠內部，紀文豪與身穿制服的工人們及合作夥伴Bart留影，圖中右一為紀文豪</p>
+            </div>
+
+            <div class="content-block">
+                <p>1990年代，事業發展進入國際化階段。1990 年成立Wever USA Inc.，1992年成立澳洲投資公司，顯示經營策略已由單一製造導向，轉為結合海外投資與市場經營。1995年投入水上用品製造，1999年進一步跨足寵物用品市場，產品線逐步多元化，有效分散單一產業景氣循環風險，並提升整體營運穩定度。</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_18.png" alt="Australia Factory">
+                <p class="caption">一九九二年，紀文豪與眾人在澳洲最大的 皮革廠前合影，圖中由左至右依序為： 皮革廠總經理、移民官Bob Brown、紀文豪、妻子劉柑柑、妻子的哥哥。</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_19.jpg" alt="Foreign Partners">
+                <p class="caption">和紀文豪合作的外國人最欣賞的就是他的人品</p>
+            </div>
+
+            <div class="content-block">
+                <p>2000年後，企業進入整合與擴張並行的發展期。折疊滑板車正式投產，並於淡水設立總部。同年 成立 EzyDog 國際公司，以及澳洲與美國子公司，正式建構全球品牌體系。儘管期間遭逢全球金 融海嘯，企業仍持續完成中國惠州工業用地購置與建廠計畫，顯示其經營思維以長期布局為主， 而非短期景氣操作。</p>
+                <p>2010年起，事業版圖延伸至不動產與資本投資領域，先後於日本與澳洲成立投資公司。2017年，EzyDog台灣公司與建設公司成立，並啟動首件住宅開發案。2022年，該住宅案完銷交屋，象徵 事業由製造、品牌經營，逐步邁向多元資產配置與穩定收益模式。至2025年，其事業體系已橫跨 製造、品牌、投資與不動產等領域，呈現長期規劃、穩健經營且持續演進的發展軌跡。</p>
+            </div>
+            
+            <div class="image-frame">
+                <img src="images/career_20.jpg" alt="Sharing experiences">    
+        </div>
+        <div class="image-frame">
+                <img src="images/career_21.jpg" alt="Sharing experiences">    
+        </div>
+        <div class="image-frame">
+                <img src="images/career_22.jpg" alt="Sharing experiences">    
+        </div>
+        <div class="image-frame">
+                <img src="images/career_23.jpg" alt="Sharing experiences">    
+        </div>
+        </section>
+
+        <h2 style="color: #4e342e; font-family: 'Playfair Display', serif;">Timeline</h2>
+        <table class="timeline-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Event (Chinese)</th>
+                    <th>Event (English)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1974</td><td>商協工業有限公司成立</td><td>Sunshine Industrial Co., Ltd. was established</td></tr>
+                <tr><td>1974</td><td>第一次石油危機</td><td>First Oil Crisis</td></tr>
+                <tr><td>1977</td><td>錦豪實業有限公司成立</td><td>Very Good Enterprise Co., Ltd. was established</td></tr>
+                <tr><td>1979</td><td>第二次石油危機</td><td>Second Oil Crisis</td></tr>
+                <tr><td>1982</td><td>緯豪實業股份有限公司成立</td><td>Wever Co., Ltd. was established</td></tr>
+                <tr><td>1987</td><td>產業西進中國</td><td>Moving to China</td></tr>
+                <tr><td>1987</td><td>緯豪－中國深圳廠成立</td><td>Wever's Shenzhen factory was established</td></tr>
+                <tr><td>1990</td><td>Wever USA Inc. 成立</td><td>Wever USA Inc. was established</td></tr>
+                <tr><td>1992</td><td>Wever 澳淵投資公司成立</td><td>Wever Australia Investment Co., Inc. was established</td></tr>
+                <tr><td>1995</td><td>水上用品投產</td><td>Started producing water sports accessories</td></tr>
+                <tr><td>1999</td><td>寵物用品投產</td><td>Started producing pet accessories</td></tr>
+                <tr><td>2000</td><td>折疊滑板車投產</td><td>Started producing foldable scooters</td></tr>
+                <tr><td>2000</td><td>緯豪淡水總部成立</td><td>Moved into Wever's new HQ in Tamsui</td></tr>
+                <tr><td>2000</td><td>EzyDog 國際公司成立</td><td>EzyDog International Inc. was established</td></tr>
+                <tr><td>2000</td><td>EzyDog 澳洲公司成立</td><td>EzyDog Australia Inc. was established</td></tr>
+                <tr><td>2000</td><td>EzyDog 美國公司成立</td><td>EzyDog USA company was established</td></tr>
+                <tr><td>2000</td><td>購置中國惠州工業用地約 54,000 ㎡</td><td>Purchased ~54,000 m² industrial land in Huizhou, China</td></tr>
+                <tr><td>2010</td><td>啟動日本房產租賃投資</td><td>Started real estate investments in Japan</td></tr>
+                <tr><td>2011</td><td>緯豪－中國惠州廠投產</td><td>Wever's Huizhou China factory started operations</td></tr>
+                <tr><td>2017</td><td>EzyDog 台灣公司成立</td><td>EzyDog Taiwan was established</td></tr>
+                <tr><td>2017</td><td>緯豪建設有限公司成立</td><td>Wever Construction Co., Ltd. was established</td></tr>
+                <tr><td>2017</td><td>美國加州聖伯納迪諾郡台灣辦事處成立</td><td>San Bernardino County Office opened</td></tr>
+                <tr><td>2017</td><td>首案「名山水岸」開工</td><td>"Bali Pinnacle Living" started construction</td></tr>
+                <tr><td>2020</td><td>COVID-19</td><td>COVID-19 Pandemic</td></tr>
+                <tr><td>2020</td><td>日本紀氏投資公司成立</td><td>Kee Investment Co., Ltd. in Japan was established</td></tr>
+                <tr><td>2021</td><td>澳洲紀氏投資公司成立</td><td>Kee Investment Co., Ltd. in Australia was established</td></tr>
+                <tr><td>2021</td><td>名緯實業有限公司成立</td><td>Keewe Co. Ltd. was established</td></tr>
+                <tr><td>2022</td><td>首案「名山水岸」完銷交屋</td><td>"Bali Pinnacle Living" was completely sold and delivered</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team</p>
+    </footer>
+</body>
+</html>

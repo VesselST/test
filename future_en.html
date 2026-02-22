@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Future Direction | Chi Wen-Hao</title>
+    <style>
+        /* 針對學習延伸區塊的卡片樣式 */
+        .feature-card {
+            background: white;
+            border: 1px solid #d3c4b1;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 4px 4px 0px var(--v-brown);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--v-brown);
+            border-bottom: 2px solid var(--v-gold);
+            display: inline-block;
+        }
+        .highlight-text {
+            color: var(--v-brown);
+            font-weight: bold;
+            background: rgba(184, 134, 11, 0.1);
+            padding: 2px 5px;
+        }
+        
+/* --- 頁面元件樣式 --- */
+.motivation-box {
+    background-color: #fff;
+    border: 2px double var(--v-brown);
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.motivation-box::before {
+    content: "Research Motivation";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 10px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: var(--v-brown);
+}
+
+.process-step {
+    border-left: 2px solid var(--v-gold);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* --- Footer 基礎佈局 --- */
+.site-footer {
+    background-color: #2b1d14; /* 深咖啡色背景 */
+    color: #ccac82;
+    padding: 60px 0;
+    border-top: 2px solid #ccac82;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 標題行與對齊 --- */
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+
+.footer-title-row h3 {
+    margin-bottom: 0;
+    white-space: nowrap; 
+}
+
+/* --- 文字內容 --- */
+.footer-text p, .intro-content p {
+    text-align: justify; 
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* --- Logo 容器設定 --- */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 若標題旁不需要置底，此處由 footer-title-row 統一管理 */
+}
+
+.footer-logo-img {
+    height: 30px; /* 標題旁精緻尺寸 */
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* --- 右側 Cyberfair Logo --- */
+.cyberfair-container {
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cyber-logo {
+    height: 60px;
+}
+
+/* --- 響應式排版 --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .cyberfair-container {
+        justify-content: center;
+    }
+    .footer-title-row {
+        flex-wrap: wrap; /* 手機版避免擠壓 */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="index_en.html">Home</a>
+    <a href="life_en.html">Life</a>
+    
+    <div class="dropdown">
+        <a href="career_en.html" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+            <a href="adversity_en.html">Overcoming Adversity</a>
+            <a href="low_points_en.html">Overcoming the Low Points</a>
+            <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+            <a href="scaling_en.html">Internationalization and Scaling</a>
+        </div>
+    </div>
+
+    <a href="family_en.html">Family</a>
+    <a href="values_en.html">Values</a>
+    <a href="future_en.html">Future</a>
+
+    <div class="dropdown">
+        <a href="about_en.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="notes_en.html">Group Notes</a>
+            <a href="team_en.html">Our Team</a>
+        </div>
+    </div>
+    <a href="data_en.html">Data Source</a>
+
+    <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+</nav>
+
+    <div class="container">
+        <h1>Future Direction</h1>
+
+        <section>
+            <h2>Chi Wen-Hao’s Expectations for Students</h2>
+            <p>Everyone has their own strengths. You should invest your time in things you are good at and willing to commit to over the long term. Do not rush to imitate others just because you see their success, because imitation often only allows you to keep up for a short period of time and is difficult to sustain. <span class="highlight-text">True and lasting success must be built on your personal traits and unique values</span>; when you consistently demonstrate these traits, opportunities will naturally come to you.</p>
+            
+            <p>Whatever you do, it should meet the essence and professional requirements of that work. Doing a project requires research questions, evidence, structure, and verifiable results; leading a team requires division of labor, collaboration processes, feedback mechanisms, progress management, and risk handling. A true manager is not someone who merely appears busy, but someone who can deliver work to standard—done, and done right.</p>
+
+            <div class="quote">
+                "In high-pressure situations, what matters most is not how much you can do, but whether you can steady your emotions and keep your judgment clear."
+            </div>
+
+            <p>Once a manager makes decisions or responds in anger, small conflicts are often magnified into organizational damage. Truly mature management means stepping back during conflict to clarify the facts and the interests involved, and then choosing appropriate methods and timing for communication so that problems are resolved rather than escalated.</p>
+            <p><strong>“Being able to yield, endure, speak, and wait”</strong> is not a sign of weakness, but a high-level ability in conflict management.</p>
+        </section>
+
+        <hr style="margin: 50px 0; border: 0; border-top: 1px dashed var(--v-gold);">
+
+        <section>
+            <h2>Website Setup & Filming</h2>
+            <div class="feature-card">
+                <h3>Website Setup</h3>
+                <p>We chose to use a website as the primary way to introduce President Chi Wen-Hao in order to break away from the limitations of traditional written reports. In an era when the internet and digital media have become major sources of information, websites can quickly integrate data and allow readers to browse and understand content at their own pace.</p>
+                <p>Through the website, we can present Chi Wen-Hao’s life journey, career development, and business philosophy in a more systematic way, while also allowing more people to access this project without limitations of time and space. This method of presentation not only improves reading convenience, but also makes the project content more aligned with modern learning and reading habits.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Filming Video</h3>
+                <p>We use video to present Chairman Chi Wen-Hao’s personal sharing of his life experiences and decision-making ideas. Through visual media, students can directly sense his tone, attitude, and emotions, making his character more three-dimensional and realistic. The video is not merely supplementary material, but can also serve as a starting point for thinking, guiding students to organize key points, summarize viewpoints, analyze problems, and understand the cause-and-effect relationships and decision-making logic behind events.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Learning Extension</h3>
+                <p>In the next stage of this project, the focus will gradually shift from “introducing the life story of Chairman Chi Wen-Hao” to “what students can actually learn and where they can apply it.” His experiences will continue to serve as material, but the purpose of reading will be more clearly placed on the accumulation of abilities rather than simply understanding achievements.</p>
+                <p>In terms of content organization, life experiences can be arranged into several easy-to-understand ability themes, such as how to make judgments when facing a crisis, how credibility is accumulated step by step, how to balance innovation and risk, and how to take care of others when leading a team. In this way, students are less likely to only remember what happened, and instead begin to pay attention to the thinking behind each decision and the impact it later produces, gradually understanding how success is pushed forward step by step.</p>
+                <p>Furthermore, important events can be transformed into situational learning questions. Moments such as the oil crisis, financial turmoil, and the impact of the pandemic are all suitable as case studies. Students first make judgments from the perspective of the time, consider what choices they would make if they were in the same situation, and then examine the actual outcomes, reflecting on where their thinking was insufficient and which risks were overlooked. This kind of practice is more effective in cultivating decision-making ability under uncertainty than simply looking at conclusions.</p>
+                <p>At the same time, comparisons related to students’ own lives can be added. His attitude when facing difficulties can be connected to the pressures students experience in academics, competitions, interpersonal relationships, or future choices. Through brief reflections or learning records, other people’s experiences can be transformed into reference tools, rather than remaining as simple impressions such as “the senior is very impressive.”</p>
+                <p>Finally, the project can be extended to broader issues, such as how small and medium-sized enterprises go global, how companies survive during crises, and what roles entrepreneurs play in society. Students will more clearly see that individual choices are closely connected to the broader era, systems, and environment.</p>
+                <p>In this way, this project will become a learning resource that can be continuously supplemented and reused, helping students understand Chi Wen-Hao while also gradually clarifying how they want to move forward in their own futures.</p>
+            </div>
+        
+        
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team</p>
+    </footer>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

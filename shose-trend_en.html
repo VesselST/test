@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Roller Skating Shoes Trend | Career</title>
+    <style>
+/* --- 頁面元件樣式 --- */
+.motivation-box {
+    background-color: #fff;
+    border: 2px double var(--v-brown);
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.motivation-box::before {
+    content: "Research Motivation";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 10px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: var(--v-brown);
+}
+
+.process-step {
+    border-left: 2px solid var(--v-gold);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* --- Footer 基礎佈局 --- */
+.site-footer {
+    background-color: #2b1d14; /* 深咖啡色背景 */
+    color: #ccac82;
+    padding: 60px 0;
+    border-top: 2px solid #ccac82;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 標題行與對齊 --- */
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+
+.footer-title-row h3 {
+    margin-bottom: 0;
+    white-space: nowrap; 
+}
+
+/* --- 文字內容 --- */
+.footer-text p, .intro-content p {
+    text-align: justify; 
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* --- Logo 容器設定 --- */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 若標題旁不需要置底，此處由 footer-title-row 統一管理 */
+}
+
+.footer-logo-img {
+    height: 30px; /* 標題旁精緻尺寸 */
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* --- 右側 Cyberfair Logo --- */
+.cyberfair-container {
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cyber-logo {
+    height: 60px;
+}
+
+/* --- 響應式排版 --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .cyberfair-container {
+        justify-content: center;
+    }
+    .footer-title-row {
+        flex-wrap: wrap; /* 手機版避免擠壓 */
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+    <a href="index_en.html">Home</a>
+    <a href="life_en.html">Life</a>
+    
+    <div class="dropdown">
+        <a href="career_en.html" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+            <a href="adversity_en.html">Overcoming Adversity</a>
+            <a href="low_points_en.html">Overcoming the Low Points</a>
+            <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+            <a href="scaling_en.html">Internationalization and Scaling</a>
+        </div>
+    </div>
+
+    <a href="family_en.html">Family</a>
+    <a href="values_en.html">Values</a>
+    <a href="future_en.html">Future</a>
+
+    <div class="dropdown">
+        <a href="about_en.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="notes_en.html">Group Notes</a>
+            <a href="team_en.html">Our Team</a>
+        </div>
+    </div>
+    <a href="data_en.html">Data Source</a>
+
+    <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+</nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 40px;">Roller Skating Shoes Trend</h1>
+
+        <section class="story-section">
+            <div class="content-block">
+                <p>Mr. Chi Wen-Hao’s mother once told him, “A few grains of rice won't help when you're in trouble.” Years later, this phrase became his support when facing the lows of life. Just as he was seeking a new path, his brother’s friend Chen Ting-Hui proactively suggested a collaboration. While Chen had rubber technology and equipment, he lacked orders and business capability. The two quickly clicked and decided to enter the then-popular roller skating shoe parts market, leading to the establishment of the new company "WEVER".</p>
+            </div>
+            
+            <div class="image-frame">
+                <img src="images/career_11.jpg" alt="Chi's Mother">
+                <p class="caption">Chi Wen-Hao 's mother sitting in front of her son's office desk for a photo</p>
+            </div>
+
+            <div class="content-block">
+                <p>Through actively visiting shoe factories and accurately assessing market demand, orders for brake heads and parts quickly surged, making WEVER a major supplier. To capture higher added value, Mr. Chi Wen-Hao further invested in the assembly of finished ice skates but encountered a sudden downturn in the market, as European trends rapidly faded and orders plummeted. Confronted with reality, he decisively downsized and adjusted manpower to withstand the slump at minimal cost.</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_12.jpg" alt="Lions Cup">
+                <p class="caption">Since 1985, to enhance the brand awareness of "Citroen," Chi Wen-Hao organized multiple roller skating competitions in Taipei City.</p>
+            </div>
+
+            <div class="content-block">
+                <p>Targeting the domestic market, he established his own brand "Citroen," insisting on quality and pricing without resorting to price-cutting competition. By utilizing consignment methods to rapidly distribute products, he increased visibility and quickly built a sales network across Taiwan, successfully opening up the market and restoring the team’s confidence.</p>
+                <p>After stabilizing his business, due to the deteriorating production environment in Taiwan, he decided to set up a factory in mainland China. After exploring and undergoing negotiations and risk assessments, he ultimately established a factory in Shenzhen and set up a base in the United States, completing his overseas layout. This growth journey was accompanied by family separation and health alerts; the price was heavy, but it also reinforced his belief that only by continuing to move forward in changing times could he truly carve out his own path.</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_13.jpg" alt="Trophies Awarded">
+                <p class="caption">The 4th Taipei Southwest Lions Cup Youth Ice Skating Competition</p>
+            </div>
+
+            <div class="content-block">
+                <p>Targeting the domestic market, he established his own brand "Citroen," insisting on quality and pricing without resorting to price-cutting competition. By utilizing consignment methods to rapidly distribute products, he increased visibility and quickly built a sales network across Taiwan, successfully opening up the market and restoring the team’s confidence.</p>
+                <p>After stabilizing his business, due to the deteriorating production environment in Taiwan, he decided to set up a factory in mainland China. After exploring and undergoing negotiations and risk assessments, he ultimately established a factory in Shenzhen and set up a base in the United States, completing his overseas layout. This growth journey was accompanied by family separation and health alerts; the price was heavy, but it also reinforced his belief that only by continuing to move forward in changing times could he truly carve out his own path.</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_14.jpg" alt="Trophies Awarded">
+                <p class="caption">The competition has ended, and the trophies are all awarded</p>
+            </div>
+
+            <div class="content-block">
+                <p><strong>With precise marketing strategies and a commitment to quality, "Citroen" ice skates gained fame in Taiwan's domestic market, propelling Mr. Chi Wen-Hao's career into a period of remarkable growth. However, in the late 1980s, Taiwan's society suffered from a gambling frenzy with "Big Lotto," which led to a deteriorating production environment, escalating labor shortages and management issues that forced him to consider long-term survival strategies for his business. To reduce production risks and secure core resources, he decisively decided to shift production capacity to mainland China, completing a significant transition in business operations and overseas layout by establishing a manufacturing base in Shenzhen and actively developing the American market.</strong></p>               
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team</p>
+    </footer>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

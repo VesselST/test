@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home | Chi Wen-Hao: From Struggle to Success</title>
+    <style>
+/* --- 基礎變數與設定 --- */
+:root {
+    --v-brown: #3d2b1f;
+    --v-gold: #ccac82;
+    --paper: #fdfaf5;
+}
+
+/* 關鍵：解決手機版滿版問題 */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* 必須保留，防止拉伸產生橫向滾動條 */
+    width: 100%;
+}
+
+/* 電腦版基礎容器 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    /* 1. 徹底解除外層容器的限制 */
+    .container, .main-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* 2. 針對 image-frame (原本的白框) 重新設定 */
+    .image-frame {
+        width: 100% !important;   /* 寬度撐滿 */
+        max-width: 100% !important;
+        margin: 20px 0 !important; /* 上下留空，左右不留 */
+        padding: 0 !important;     /* 關鍵：把白框的內距刪掉，照片才能碰到邊 */
+        background: transparent !important; /* 移除白底 */
+        border: none !important;   /* 移除邊框 */
+        box-shadow: none !important;
+        text-align: center;
+    }
+
+    /* 3. 讓照片依比例縮放至螢幕寬度 */
+    .image-frame img {
+        width: 100% !important;    /* 寬度 100% */
+        height: auto !important;   /* 自動維持比例，不變形 */
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* 4. 照片底下的文字 (Caption) 還是要留一點邊距才好看 */
+    .caption, .image-frame p {
+        padding: 10px 20px !important;
+        color: var(--v-brown);
+        font-size: 0.9rem;
+        background-color: var(--paper); /* 只有文字部分有底色 */
+        margin: 0 !important;
+    }
+
+    /* 5. 確保頁面其他文字不要貼邊 */
+    #introduction p, #process p, h1, h2, h3 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* --- 以下保留你原本的 Footer 樣式 --- */
+.site-footer {
+    background-color: #2b1d14;
+    color: var(--v-gold);
+    padding: 60px 0;
+    border-top: 2px solid var(--v-gold);
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+.footer-left, .footer-right { flex: 1; display: flex; flex-direction: column; }
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+.footer-title-row h3 { margin: 0; white-space: nowrap; color: #fff; }
+.footer-text p, .intro-content p { text-align: justify; line-height: 1.8; margin-bottom: 15px; }
+.footer-logo-img { height: 30px; }
+.cyberfair-container { margin-top: auto; display: flex; justify-content: flex-end; }
+.cyber-logo { height: 60px; cursor: pointer; }
+
+@media (max-width: 768px) {
+    .footer-container { flex-direction: column; padding: 0; }
+    .cyberfair-container { justify-content: center; padding: 20px 0; }
+    .footer-title-row { flex-wrap: wrap; padding: 10px 20px; }
+    .footer-logo-img { height: 25px; }
+}
+</style>
+</head>
+<body>
+    <nav>
+    <a href="index_en.html">Home</a>
+    <a href="life_en.html">Life</a>
+    
+    <div class="dropdown">
+        <a href="career_en.html" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+            <a href="adversity_en.html">Overcoming Adversity</a>
+            <a href="low_points_en.html">Overcoming the Low Points</a>
+            <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+            <a href="scaling_en.html">Internationalization and Scaling</a>
+        </div>
+    </div>
+
+    <a href="family_en.html">Family</a>
+    <a href="values_en.html">Values</a>
+    <a href="future_en.html">Future</a>
+
+    <div class="dropdown">
+        <a href="about_en.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="notes_en.html">Group Notes</a>
+            <a href="team_en.html">Our Team</a>
+    
+    
+        </div>
+    </div>
+    <a href="data_en.html">Data Source</a>
+
+    <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+</nav>
+
+
+    <div class="container">
+        <h1>Overview</h1>
+        
+        <section id="introduction">
+            <p>The protagonist of this website is <strong>Chi Wen-Hao</strong>. He is the president of <strong>WEVER Group</strong>.</p>
+            <p>In 1974, he founded the company from scratch, starting with manufacturing metal and plastic products for Taiwan’s domestic electronics industry. Currently, his WEVER Group is a multinational corporation specializing in OEM manufacturing of water-sports equipment, pet accessories, and extreme-sports gear, and some of its products hold the largest market share worldwide. Currently, his business has a global presence, with investment companies in the United States and Australia, and distributors in various European countries selling nearly a thousand products. In 2003, he integrated all subsidiaries to establish WEVER Group and established its headquarters in Tamsui.</p>
+
+            <div class="image-frame">
+                <img src="images/home_01.jpg" alt="Mr. Chi Wen-Hao">
+                <p class="caption">Mr. Chi Wen-Hao</p>
+            </div>
+
+            <p>Chi Wen-Hao’s career has been marked by struggle, setbacks, and hard-won progress. He was born into a wealthy family in Dadaocheng. His family fell into decline when he was in elementary school and he experienced hardship. After completing his military service, he started from the bottom. His entrepreneurial journey was full of ups and downs and obstacles. He encountered two oil crises as soon as he started his business. He used his unparalleled perseverance to cope with the situation by innovating products, changing structures, and strengthening research and development.</p>
+            
+            <p>After that, the financial crisis, the bubble economy, SARS, and COVID-19 all passed. It is an epitome of the struggle history of Taiwan's small and medium-sized enterprises during Taiwan's economic take-off in the last century. It also became a model for Taiwanese businesses expanding into mainland China.</p>
+
+            <p>Chi Wen-Hao remains mindful of those who supported him along the way. He serves as President of Taiwan’s oldest golf club and as Chair of the Tamkang High School Alumni Association. This webpage is a report by Tamkang High School students on the legendary life of their alumnus, in order to record the changes in Taiwanese society and his expectations for young people today.</p>
+        </section>
+
+        <section id="motivation" class="motivation-box">
+            <p>For high school students, Chi Wen-Hao's struggle history is not merely a slogan from “success culture”, but a learning model that can be compared with their own situation:</p>
+            <ul>
+                <li><strong>First</strong>, when facing setbacks, they can transform pressure into discipline and more accurate judgment;</li>
+                <li><strong>Second</strong>, in interpersonal relationships and cooperation, they can accumulate long-term credit with sincerity and trust;</li>
+                <li><strong>Third</strong>, they can build leadership with service and altruism, and use the principles of <em>"Be able to yield, be able to endure, be able to teach, be able to wait"</em> to deal with conflicts and uncertain situations.</li>
+            </ul>
+            <p>These abilities correspond to the "resilience, communication, and risk thinking" that high school students need most under the pressure of further education, competitions, clubs, and interpersonal relationships.</p>
+
+            <div class="image-frame">
+                <img src="images/home_02.jpg" alt="Chi Wen-Hao's motto">
+                <p class="caption">Chi Wen-Hao's motto</p>
+            </div>
+
+            <p>Because he currently serves as Chair of the Tamkang High School Alumni Association, we have opportunities to meet him on campus and are willing to learn more from him. So we formed a team to record his experience through reading his autobiography and conducting interviews, and organized it into a clear growth path, divided into personal life, family, career achievements, and values and character, hoping that readers can more systematically understand how he adjusts his pace and accumulates abilities under realistic pressure, and transforms each setback into a starting point for a new departure.</p>
+        </section>
+
+        <section id="process">
+            <h2>The Process of Project Production</h2>
+            <div class="image-frame">
+                <img src="images/home_03.jpg" alt="Students visit Chi Wen-Hao">
+                <p class="caption">Senior High School Students Visit Chi Wen-Hao</p>
+            </div>
+            
+            <div class="process-step">
+                <p>Throughout the entire website and project production process, we went through a very long process from the initial division of labor and planning to the subsequent interviews, organization, and planning. Although there are many complex things to do each time we do a project, everyone can be very efficient in the layout and planning of the website during the actual production.</p>
+            </div>
+
+            <p>Everyone did a very good job in their respective assigned tasks. This time, the organization of Chairman Chi Wen-Hao's life mainly focuses on his childhood business process and personal autobiography content; the follow-up interview focuses on supplementing the parts that are not yet recorded in the current autobiography. Through multiple interviews, we not only pieced together the story context more completely, but also gained a deeper understanding of Chairman Chi Wen-Hao's business philosophy in various aspects; whether it is the industry he is currently engaged in, or the bits and pieces of serving as the chairman of the alumni association, we have a deeper understanding of him in these interviews.</p>
+
+            <div class="image-frame">
+                <img src="images/home_04.jpg" alt="Photo with students">
+                <p class="caption">Senior High School Students Visit Chi Wen-Hao</p>
+            </div>
+
+            <p>We hope that through participating in the International Schools CyberFair, more people can learn about the life of Chairman Chi Wen-Hao, and we also invite you to read and think with us - <strong>when reality is not as expected, can we be like Chi Wen-Hao and turn every fall into the starting point for the next stand up?</strong></p>
+        
+        </section>
+    </div>
+    <section class="video-section" style="text-align: center; padding: 20px;">
+    <h2 style="color: #ccac82;">Video Introduction</h2>
+    
+    <div style="max-width: 800px; margin: 0 auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yv9CPp9VPVk?si=1DMJqu2fHw2PB7Se&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </section>
+    
+
+    
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team | Project: Chi Wen-Hao</p>
+    </footer>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

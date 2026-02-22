@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Overcoming Adversity | Career</title>
+    <style>
+/* --- 頁面元件樣式 --- */
+.motivation-box {
+    background-color: #fff;
+    border: 2px double var(--v-brown);
+    padding: 30px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.motivation-box::before {
+    content: "Research Motivation";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 10px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: var(--v-brown);
+}
+
+.process-step {
+    border-left: 2px solid var(--v-gold);
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* --- Footer 基礎佈局 --- */
+.site-footer {
+    background-color: #2b1d14; /* 深咖啡色背景 */
+    color: #ccac82;
+    padding: 60px 0;
+    border-top: 2px solid #ccac82;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- 標題行與對齊 --- */
+.footer-title-row {
+    display: flex;
+    align-items: center; 
+    gap: 20px;           
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #3d2b1f; 
+    padding-bottom: 10px;
+}
+
+.footer-title-row h3 {
+    margin-bottom: 0;
+    white-space: nowrap; 
+}
+
+/* --- 文字內容 --- */
+.footer-text p, .intro-content p {
+    text-align: justify; 
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* --- Logo 容器設定 --- */
+.main-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* 若標題旁不需要置底，此處由 footer-title-row 統一管理 */
+}
+
+.footer-logo-img {
+    height: 30px; /* 標題旁精緻尺寸 */
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+/* --- 右側 Cyberfair Logo --- */
+.cyberfair-container {
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.cyber-logo {
+    height: 60px;
+}
+
+/* --- 響應式排版 --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .cyberfair-container {
+        justify-content: center;
+    }
+    .footer-title-row {
+        flex-wrap: wrap; /* 手機版避免擠壓 */
+    }
+}
+</style>
+</head>
+<body>
+    <nav>
+    <a href="index_en.html">Home</a>
+    <a href="life_en.html">Life</a>
+    
+    <div class="dropdown">
+        <a href="career_en.html" class="dropbtn">Career</a>
+        <div class="dropdown-content">
+            <a href="adversity_en.html">Overcoming Adversity</a>
+            <a href="low_points_en.html">Overcoming the Low Points</a>
+            <a href="shose-trend_en.html">Roller Skating Shoes Trend</a>
+            <a href="scaling_en.html">Internationalization and Scaling</a>
+        </div>
+    </div>
+
+    <a href="family_en.html">Family</a>
+    <a href="values_en.html">Values</a>
+    <a href="future_en.html">Future</a>
+
+    <div class="dropdown">
+        <a href="about_en.html" class="dropbtn">About Us</a>
+        <div class="dropdown-content">
+            <a href="notes_en.html">Group Notes</a>
+            <a href="team_en.html">Our Team</a>
+        </div>
+    </div>
+    <a href="data_en.html">Data Source</a>
+
+    <a href="index.html" style="margin-left: 20px; color: #ccac82; font-weight: bold;">中文版</a>
+</nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 40px;">Overcoming Adversity</h1>
+            <div class="image-frame">
+                <img src="images/career_01.jpg" alt="Ancestral home view">
+                <p class="caption">In 1937, Chi Wen-Hao’s father, who was serving as a Japanese soldier, was photographed in uniform with young children.</p>
+            </div>
+
+            <div class="content-block">
+                <p>In the 1950s, Japanese apples were one of the most popular imported fruits in Taiwan. The trading model at that time relied heavily on trust—merchants would hand over funds to brokers, who would then arrange for goods in Japan, returning them in batches once the harvest season arrived. This trading method had been operating smoothly for many years in the Chi Wen-Hao family, with established processes and stable credibility, resulting in consistent business success.</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_02.jpg" alt="Photo with father">
+                <p class="caption">This photo was taken in the 1950s, showing the view down from the second floor of Chi Wen-Hao’s ancestral home on Dihua Street.</p>
+            </div>
+
+            <div class="content-block">
+                <p>In 1957, Chi Wen-Hao’s father, following years of routine, handed a considerable sum to a familiar broker named Chen, but this time it became a turning point of fate. After receiving the funds, Chen disappeared without a trace, leading to a disruption in the supply chain, unfulfilled orders, and a loss of customers, causing the credibility built over many years to collapse in a short time. Cash flow became tight, business volume plummeted, and several key executives left one after another.</p>
+                <p>In the same year, his grandmother passed away. The severe business setback and the loss of a loved one hit hard; under this dual pressure, his father's health deteriorated significantly. This was not a failure caused by a single mistake, but rather the collapse under the intertwining forces of reality.</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_03.jpg" alt="Wedding day">
+                <p class="caption">A precious photo with his father, showing from left to right: elder brother Chi Hui-Hsiung, Chi Wen-Hao, father, and younger brother Chi Wen-Jie.</p>
+            </div>
+
+            <div class="content-block">
+                <p>A year later, Chen finally resurfaced, only to bring more creditors who had suffered the same fate. Amidst the agitation of the crowd, Chi Wen-Hao’s father chose to step forward to calm them, believing that resorting to violence or legal action would not immediately recover losses. Instead, he decided to give Chen time to repay the debt. Thus, they established Meihua Trading Company, assigning Chen to handle the business in an attempt to exchange one last trust for a chance at recovery.
+However, this trust fell through once again. The company declared failure a year later.
+
+</p>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_04.jpg" alt="Twin brothers">
+                <p class="caption">On the wedding day of his elder sister Chi Qiu-Zi in 1962, festive wedding cars were parked in front of the first floor of the ancestral home on Dihua Street, with everyone waiting under the awning for the auspicious moment to arrive.</p>
+            </div>
+
+            <div class="content-block">
+                <p>The hardships did not end there. Shunlong Trading was struck by a series of natural disasters. Export-bound fresh fruit had already been packed, but a typhoon delayed the shipping schedule. Without refrigeration facilities, the entire shipment spoiled and had to be discarded. As the business deteriorated, market rumors spread, employees gradually left, and debts continued to mount.</p>
+                <p>Even under such circumstances, when he was offered a high-paying position elsewhere, his father chose to remain. He believed that the business had been built by his own hands and that he could not abandon it during its most difficult period. This decision was not driven by rational calculation, but by a commitment to personal values.</p>
+                <p>In the summer of 1960, his father collapsed after suffering a hemorrhagic stroke. The family suddenly lost its primary source of income. Outside the intensive care unit, medical expenses had to be raised immediately, and his mother was forced to shoulder the responsibility of supporting the entire household on her own. Although his father survived, he was left with partial paralysis, and the path to rehabilitation was long and arduous.</p>
+                <P>As the family fortunes declined, the children were compelled to mature early and share the financial burden. His father consistently insisted that the family preserve its dignity—no matter how difficult the circumstances, their spirit must never be broken.</P>
+            </div>
+
+            <div class="image-frame">
+                <img src="images/career_05.jpg" alt="Twin brothers">
+                <p class="caption">Chi Wen-Hao, along with his twin brother Chi Wen-Jie, at the age of nineteen; Wen-Hao is on the left and Wen-Jie is on the right.</p>
+            </div>
+
+            <div class="content-block">
+                <p>When Chi Wen-Hao obeyed his father's orders to take down the plaque that symbolized the family's honor and removed the four golden characters "Nong Shang Li Lai," he realized at the moment the first character was taken off, exposing the back, that it was not gold but merely copper. In that moment, he truly understood the impermanence of life for the first time and made a determination in his heart: no matter how difficult it was, he had to get through this challenge.</p>
+                <p>After his father collapsed, the family business "Shunlong" also fell apart. At just twelve years old, Chi Wen-Hao began to comprehend the harsh realities of society. However, he always remembered his father's repeated admonitions — dignity and spirit are the only things that cannot be lost during difficult times.</p>
+                <p>When he grew up, he voluntarily applied to enlist early in the military to lessen the family burden. Through the rigorous training in the special forces, he learned endurance, obedience, and perseverance. This military experience not only honed his physical strength but also became the psychological foundation for his future endeavors in the business world.</p>
+                <P><strong>His father, overwhelmed by work, collapsed in 1960, and soon after the family business "Shunlong" was declared to have collapsed, which made Mr. Chi Wen-Hao, only twelve years old at the time, experience the realities and uncertainties of society prematurely. Although life fell into distress, he always remembered his father's teachings about "dignity and spirit," and when he grew up, he proactively applied to enlist early to alleviate the family burden. Through the tough training in the special forces, he developed the resilience to face hardships and persist in everything, establishing the willpower foundation for his later ventures in the business world.</strong></P>
+            </div>
+
+
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Tamkang High School CyberFair Team</p>
+    </footer>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-title-row">
+                <h3>關於我們 About Us</h3>
+                <div class="main-logo-container">
+                    <img src="images/home_06.jpg" alt="TMSSOCIAL STUDIO" class="footer-logo-img">
+                </div>
+            </div>
+            <div class="footer-text">
+                <p class="zh">作為新課綱的實踐者、生力軍，我們強調學習的質地，必須是建立在「品行」之上，能支持與認同班級理念：真誠、忍耐、團結，在「關懷」的視野上，深耕在地，放眼世界。</p>
+                <p class="en">As practitioners and pioneers of the new curriculum, we emphasize that the quality of learning must be built upon "character," supporting our class philosophy: sincerity, patience, and unity.</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-title-row">
+                <h3>紀文豪理事長 President Wen-Hao Chi</h3>
+                </div>
+            <div class="intro-content">
+                <p class="zh">紀文豪先生是一位傑出的企業家與社會實踐者，秉持著「五心四能」的創業精神，在事業成功的同時，更致力於宗親文化與社會公益。他的回憶錄《荒蕪與播種》記錄了其不畏艱難、開拓進取的人生哲學。</p>
+                <p class="en">Mr. Wen-Hao Chi is an outstanding entrepreneur. His memoir reflects a philosophy of perseverance and progress.</p>
+            </div>
+            <div class="cyberfair-container">
+    <a href="http://globalschoolnet.org/gsncf/index.cfm" target="_blank">
+        <img src="images/home_5.jpg" alt="Cyberfair Logo" class="cyber-logo">
+    </a>
+</div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
